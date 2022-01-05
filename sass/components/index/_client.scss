@@ -9,8 +9,9 @@
 }
 
 .client-list {
-  display: flex;
-  justify-content: center;
+  // maybe
+  // display: flex;
+  // justify-content: center;
 }
 .client__item {
   display: flex;
@@ -20,6 +21,15 @@
   height: 92px;
   & + & {
     margin-left: 30px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    max-width: 768px;
+    flex-basis: calc(100% / 2 - 30px);
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
