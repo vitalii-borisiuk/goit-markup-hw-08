@@ -1410,7 +1410,7 @@ ul {
   color: var(--second-color);
 }
 
-.phone-menu-list__link:hover, .phone-menu-list__link:focus {
+.phone-menu-list__link:hover, .phone-menu-list__link:focus, .phone-menu-list__link.current {
   color: var(--accent-color);
 }
 

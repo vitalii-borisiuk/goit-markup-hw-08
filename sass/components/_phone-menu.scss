@@ -63,7 +63,8 @@
   letter-spacing: 0.02em;
   color: var(--second-color);
   &:hover,
-  &:focus {
+  &:focus,
+  &.current {
     color: var(--accent-color);
   }
 }
