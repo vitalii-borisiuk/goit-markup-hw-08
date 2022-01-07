@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="header__navi">
           <a class="header-logo__first header-logo logo link" lang="en" href="./index.html"
@@ -52,15 +52,79 @@
             >
           </li>
         </ul>
+        <button type="button" class="phone-menu-open-btn">
+          <svg class="phone-menu-open-icon" width="24" height="16">
+            <use href="/images/icons.svg#icon-menu_open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
-    <!-- <main>
+      <div class="phone-menu is-hidden">
+        <div class="container">
+          <div class="phone-menu-top">
+            <button type="button" class="phone-menu-close-btn">
+              <svg class="phone-menu-close-icon" width="18.67" height="18.67">
+                <use href="./images/icons.svg#icon-menu_close"></use>
+              </svg>
+            </button>
+            <ul class="phone-menu-list list">
+              <li class="phone-menu-list__item">
+                <a class="phone-menu-list__link current link" href="./index.html">Студия</a>
+              </li>
+              <li class="phone-menu-list__item">
+                <a class="phone-menu-list__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="phone-menu-list__item">
+                <a class="phone-menu-list__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="phone-menu-buttom">
+            <ul class="phone-contact-list list">
+              <li class="phone-contact-list__item">
+                <a href="tel:+380961111111" class="phone-contact-list__contacts phone-tel link">
+                  <svg class="phone-contact-list__item-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="phone-contact-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="phone-contact-list__contacts phone-envelope link"
+                >
+                  <svg class="phone-contact-list__item-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="phone-list__social list">
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">Instagram</a>
+              </li>
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">Twitter </a>
+              </li>
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">Facebook </a>
+              </li>
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
       <section class="main section">
         <div class="container main__container">
           <h1 class="main__title">Эффективные решения для вашего бизнеса</h1>
           <button class="main__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
       <section class="features section">
         <div class="container">
           <h2 class="features__title visually-hidden">заголовок</h2>
@@ -112,58 +176,104 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container">
           <h2 class="about__title">Чем мы занимаемся</h2>
           <ul class="about-list list">
             <li class="about-list__item">
-              <img
-                src="./images/box_01.jpg"
-                alt="Адаптация сайта для ПК"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/box_desktop_01.jpg    1x,
+                    ./images/desktop/box_desktop_01_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/desktop/img_desktop_01.jpg"
+                  alt="Адаптация сайта для ПК"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="about-list__top">
                 <p class="about-list__top-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="about-list__item">
-              <img
-                src="./images/box_02.jpg"
-                alt="Адаптация сайта для смаптфона"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/box_desktop_02.jpg    1x,
+                    ./images/desktop/box_desktop_02_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/box_desktop_02.jpg"
+                  alt="Адаптация сайта для смаптфона"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="about-list__top">
                 <p class="about-list__top-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="about-list__item">
-              <img
-                src="./images/box_03.jpg"
-                alt="Адаптация сайта для планшета"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/box_desktop_03.jpg    1x,
+                    ./images/desktop/box_desktop_03_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/box_desktop_03.jpg"
+                  alt="Адаптация сайта для смаптфона"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="about-list__top">
                 <p class="about-list__top-text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                src="./images/img_01.jpg"
-                alt="Игорь Демьяненко"
-                max-width="270"
-                max-height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img_desktop_01.jpg    1x,
+                    ./images/desktop/img_desktop_01_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img_tablet_01.jpg    1x,
+                    ./images/tablet/img_tablet_01_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/phone/img_phone_01.jpg 1x, ./images/phone/img_phone_01_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/desktop/img_desktop_01.jpg"
+                  alt="Игорь Демьяненко"
+                  class="team__img"
+                />
+              </picture>
               <div class="team-list__card">
                 <h3 class="team-list__personal">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__text">Product Designer</p>
@@ -200,13 +310,31 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img_02.jpg"
-                alt="Ольга Репина"
-                max-width="270"
-                max-height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img_desktop_02.jpg    1x,
+                    ./images/desktop/img_desktop_02_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img_tablet_02.jpg    1x,
+                    ./images/tablet/img_tablet_02_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/phone/img_phone_02.jpg 1x, ./images/phone/img_phone_02_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/desktop/box_desktop_02.jpg"
+                  alt="Ольга Репина"
+                  class="team__img"
+                />
+              </picture>
               <div class="team-list__card">
                 <h3 class="team-list__personal">Ольга Репина</h3>
                 <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -243,13 +371,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img_03.jpg"
-                alt="Николай Тарасов"
-                max-width="270"
-                max-height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img_desktop_03.jpg    1x,
+                    ./images/desktop/img_desktop_03_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img_tablet_03.jpg    1x,
+                    ./images/tablet/img_tablet_03_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/phone/img_phone_03.jpg 1x, ./images/phone/img_phone_03_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/desktop/box_desktop_03.jpg"
+                  alt="Николай Тарасов"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="team-list__card">
                 <h3 class="team-list__personal">Николай Тарасов</h3>
                 <p lang="en" class="team-list__text">Marketing</p>
@@ -286,13 +433,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img_04.jpg"
-                alt="Михаил Ермаков"
-                max-width="270"
-                max-height="260"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img_desktop_04.jpg    1x,
+                    ./images/desktop/img_desktop_04_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img_tablet_04.jpg    1x,
+                    ./images/tablet/img_tablet_04_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/phone/img_phone_04.jpg 1x, ./images/phone/img_phone_04_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/desktop/img_desktop_04.jpg"
+                  alt="Михаил Ермаков"
+                  class="team__img"
+                />
+              </picture>
+
               <div class="team-list__card">
                 <h3 class="team-list__personal">Михаил Ермаков</h3>
                 <p lang="en" class="team-list__text">UI Designer</p>
@@ -523,5 +689,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

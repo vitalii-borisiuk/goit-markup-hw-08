@@ -1,6 +1,10 @@
 .about {
+  display: none;
   background-color: var(--first-color);
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .about__title {
   font-weight: 700;
