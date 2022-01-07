@@ -24,10 +24,10 @@
 
           <ul class="header-list list">
             <li class="header-list__item">
-              <a class="header-list__link link" href="./index.html">Студия</a>
+              <a class="header-list__link current link" href="./index.html">Студия</a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__link current link" href="./portfolio.html">Портфолио</a>
+              <a class="header-list__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-list__item">
               <a class="header-list__link link" href="">Контакты</a>
@@ -52,6 +52,70 @@
             >
           </li>
         </ul>
+        <button type="button" class="phone-menu-open-btn">
+          <svg class="phone-menu-open-icon" width="24" height="16">
+            <use href="/images/icons.svg#icon-menu_open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="phone-menu is-hidden">
+        <div class="container">
+          <div class="phone-menu-top">
+            <button type="button" class="phone-menu-close-btn">
+              <svg class="phone-menu-close-icon" width="18.67" height="18.67">
+                <use href="./images/icons.svg#icon-menu_close"></use>
+              </svg>
+            </button>
+            <ul class="phone-menu-list list">
+              <li class="phone-menu-list__item">
+                <a class="phone-menu-list__link current link" href="./index.html">Студия</a>
+              </li>
+              <li class="phone-menu-list__item">
+                <a class="phone-menu-list__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="phone-menu-list__item">
+                <a class="phone-menu-list__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="phone-menu-buttom">
+            <ul class="phone-contact-list list">
+              <li class="phone-contact-list__item">
+                <a href="tel:+380961111111" class="phone-contact-list__contacts phone-tel link">
+                  <svg class="phone-contact-list__item-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="phone-contact-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="phone-contact-list__contacts phone-envelope link"
+                >
+                  <svg class="phone-contact-list__item-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="phone-list__social list">
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">Instagram</a>
+              </li>
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">Twitter </a>
+              </li>
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">Facebook </a>
+              </li>
+              <li class="phone-social__item">
+                <a href="" class="phone-social__link">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -80,12 +144,34 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="./images/portfolio/techno.jpg 1x, ./images/portfolio/techno_2x.jpg 2x"
-                      src="./images/portfolio/techno.jpg"
-                      width="370"
-                      alt="Технокряк"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/techno_desktop.jpg    1x,
+                          ./images/portfolio/desktop/techno_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/techno_tablet.jpg    1x,
+                          ./images/portfolio/tablet/techno_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/techno_phone.jpg    1x,
+                          ./images/portfolio/phone/techno_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        src="./images/portfolio/desktop/techno_desktop.jpg"
+                        width="370"
+                        alt="Технокряк"
+                      />
+                    </picture>
                     <p class="work-list__top-text">
                       Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -104,12 +190,36 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="./images/portfolio/poster.jpg 1x, ./images/portfolio/poster_2x.jpg 2x"
-                      src="./images/portfolio/poster.jpg"
-                      width="370"
-                      alt="Постер New Orlean vs Golden Star"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/poster_desktop.jpg    1x,
+                          ./images/portfolio/desktop/poster_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/poster_tablet.jpg    1x,
+                          ./images/portfolio/tablet/poster_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/poster_phone.jpg    1x,
+                          ./images/portfolio/phone/poster_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img
+                        src="./images/portfolio/desktop/poster_desktop.jpg"
+                        width="370"
+                        alt="Постер New Orlean vs Golden Star"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -131,15 +241,35 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="
-                        ./images/portfolio/seafood.jpg    1x,
-                        ./images/portfolio/seafood_2x.jpg 2x
-                      "
-                      src="./images/portfolio/seafood.jpg"
-                      width="370"
-                      alt="Ресторан Seafood"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/seafood_desktop.jpg    1x,
+                          ./images/portfolio/desktop/seafood_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/seafood_tablet.jpg    1x,
+                          ./images/portfolio/tablet/seafood_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/seafood_phone.jpg    1x,
+                          ./images/portfolio/phone/seafood_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        src="./images/portfolio/desktop/seafood_desktop.jpg"
+                        width="370"
+                        alt="Ресторан Seafood"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -158,12 +288,35 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="./images/portfolio/prime.jpg 1x, ./images/portfolio/prime_2x.jpg 2x"
-                      src="./images/portfolio/prime.jpg"
-                      width="370"
-                      alt="Проект Prime"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/prime_desktop.jpg    1x,
+                          ./images/portfolio/desktop/prime_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/prime_tablet.jpg    1x,
+                          ./images/portfolio/tablet/prime_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/prime_phone.jpg    1x,
+                          ./images/portfolio/phone/prime_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        src="./images/portfolio/desktop/prime_desktop.jpg"
+                        width="370"
+                        alt="Проект Prime"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -182,12 +335,35 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="./images/portfolio/boxes.jpg 1x, ./images/portfolio/boxes_2x.jpg 2x"
-                      src="./images/portfolio/boxes.jpg"
-                      width="370"
-                      alt="Проект Boxes"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/boxes_desktop.jpg    1x,
+                          ./images/portfolio/desktop/boxes_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/boxes_tablet.jpg    1x,
+                          ./images/portfolio/tablet/boxes_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/boxes_phone.jpg    1x,
+                          ./images/portfolio/phone/boxes_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        src="./images/portfolio/desktop/boxes_desktop.jpg"
+                        width="370"
+                        alt="Проект Boxes"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, soluta deserunt
                       praesentium ea harum ipsum quis dolores, aut iusto ducimus doloremque atque
@@ -205,16 +381,36 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      lang="en"
-                      srcset="
-                        ./images/portfolio/borders.jpg    1x,
-                        ./images/portfolio/borders_2x.jpg 2x
-                      "
-                      src="./images/portfolio/borders.jpg"
-                      width="370"
-                      alt="Inspiration has no Borders"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/borders_desktop.jpg    1x,
+                          ./images/portfolio/desktop/borders_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/borders_tablet.jpg    1x,
+                          ./images/portfolio/tablet/borders_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/borders_phone.jpg    1x,
+                          ./images/portfolio/phone/borders_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        lang="en"
+                        src="./images/portfolio/desktop/borders_desktop.jpg"
+                        width="370"
+                        alt="Inspiration has no Borders"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -233,15 +429,35 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="
-                        ./images/portfolio/limited.jpg    1x,
-                        ./images/portfolio/limited_2x.jpg 2x
-                      "
-                      src="./images/portfolio/limited.jpg"
-                      width="370"
-                      alt="Издание Limited Edition"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/limited_desktop.jpg    1x,
+                          ./images/portfolio/desktop/limited_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/limited_tablet.jpg    1x,
+                          ./images/portfolio/tablet/limited_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/limited_phone.jpg    1x,
+                          ./images/portfolio/phone/limited_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        src="./images/portfolio/desktop/limited_desktop.jpg"
+                        width="370"
+                        alt="Издание Limited Edition"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -260,12 +476,35 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      srcset="./images/portfolio/lab.jpg 1x, ./images/portfolio/lab_2x.jpg 2x"
-                      src="./images/portfolio/lab.jpg"
-                      width="370"
-                      alt="Проект LAB"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/lab_desktop.jpg    1x,
+                          ./images/portfolio/desktop/lab_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/lab_tablet.jpg    1x,
+                          ./images/portfolio/tablet/lab_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/lab_phone.jpg    1x,
+                          ./images/portfolio/phone/lab_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        src="./images/portfolio/desktop/lab_desktop.jpg"
+                        width="370"
+                        alt="Проект LAB"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -284,16 +523,36 @@
               <div class="work-list__item-focus">
                 <a href="" class="work-list__focus-link link">
                   <div class="work-list__item-wrap">
-                    <img
-                      lang="en"
-                      srcset="
-                        ./images/portfolio/business.jpg    1x,
-                        ./images/portfolio/business_2x.jpg 2x
-                      "
-                      src="./images/portfolio/business.jpg"
-                      width="370"
-                      alt="Growing Business"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop/business_desktop.jpg    1x,
+                          ./images/portfolio/desktop/business_desktop_2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet/business_tablet.jpg    1x,
+                          ./images/portfolio/tablet/business_tablet_2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/phone/business_phone.jpg    1x,
+                          ./images/portfolio/phone/business_phone_2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+                      <img
+                        lang="en"
+                        src="./images/portfolio/desktop/business_desktop.jpg"
+                        width="370"
+                        alt="Growing Business"
+                      />
+                    </picture>
+
                     <p class="work-list__top-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat
                       molestiae accusantium facere illum sapiente. Accusantium, sit quod maiores
@@ -384,4 +643,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/menu.js"></script>
 </html>
