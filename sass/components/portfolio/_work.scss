@@ -1,7 +1,8 @@
 .work-list {
-  display: block;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  // margin-right: -30px;
+  // margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +13,8 @@
 }
 
 .work-list__item {
+  width: 100%;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     max-width: 768px;
     flex-basis: calc(100% / 2 - 30px);

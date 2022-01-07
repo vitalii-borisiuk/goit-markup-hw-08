@@ -4,7 +4,7 @@
 .filter-list {
   display: flex;
   // flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
   @media screen and (min-width: 320px) {
     flex-wrap: wrap;
