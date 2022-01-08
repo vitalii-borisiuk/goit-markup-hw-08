@@ -5,22 +5,30 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.header-logo {
+.header__logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.header-logo__first {
+.header__logo-first {
   color: var(--accent-color);
   margin-right: 93px;
 }
-.header-logo__second {
+.header__logo-second {
   color: var(--logo-color);
 }
 
-.footer-logo__first {
+.footer__logo-first {
   color: var(--accent-color);
 }
-.footer-logo__second {
+.footer__logo-second {
   color: var(--first-color);
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }

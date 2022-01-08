@@ -2,7 +2,7 @@
   background-color: var(--first-color);
 }
 
-.features-list__icon-item {
+.features__list-icon-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
     }
   }
 }
-.features-list {
+.features__list {
   display: block;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -32,7 +32,7 @@
   }
 }
 
-.features-list__item {
+.features__list-item {
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     max-width: 768px;
     flex-basis: calc(100% / 2 - 30px);
@@ -56,7 +56,7 @@
   margin-bottom: 30px;
 }
 
-.features-list__func {
+.features__list-func {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -65,7 +65,7 @@
   color: var(--second-color);
   margin-bottom: 10px;
 }
-.features-list__text {
+.features__list-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

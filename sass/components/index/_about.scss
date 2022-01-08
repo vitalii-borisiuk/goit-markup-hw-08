@@ -15,17 +15,17 @@
   color: var(--second-color);
   margin-bottom: 50px;
 }
-.about-list {
+.about__list {
   display: flex;
 }
-.about-list__item {
+.about__list-item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.about-list__top-text {
+.about__list-top-text {
   display: flex;
   justify-content: center;
   align-items: center;
