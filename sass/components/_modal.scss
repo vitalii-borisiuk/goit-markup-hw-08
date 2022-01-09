@@ -8,8 +8,20 @@
   transition: opacity 250ms, visibility 250ms;
 }
 .modal {
-  width: 528px;
-  min-height: 581px;
+  @media screen and (min-width: 450px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+  // width: 528px;
+  // min-height: 581px;
   background-color: var(--first-color);
   border-radius: 4px;
   position: absolute;
