@@ -1180,6 +1180,7 @@ ul {
   top: 0;
   left: 0;
   opacity: 1;
+  position: absolute;
   transition: opacity 250ms, visibility 250ms;
 }
 
