@@ -1179,25 +1179,33 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 1;
   transition: opacity 250ms, visibility 250ms;
 }
 
 .modal {
-  width: 450px;
-  min-height: 609px;
   background-color: var(--first-color);
   border-radius: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  width: 96%;
+  height: auto;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
