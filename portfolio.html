@@ -41,7 +41,7 @@
           <li class="contact__list-item">
             <a
               href="mailto:info@devstudio.com"
-              class="contact__list__contacts header__envelope link"
+              class="contact__list-contacts header__envelope link"
             >
               <svg class="contact__list-item-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -58,16 +58,26 @@
             >
           </li>
         </ul>
-        <button type="button" class="phone__menu-open-btn">
+        <button
+          type="button"
+          class="phone__menu-open-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="phone-menu"
+        >
           <svg class="phone__menu-open-icon" width="24" height="16">
             <use href="./images/icons.svg#icon-menu_open"></use>
           </svg>
         </button>
       </div>
-      <div class="phone__menu is-hidden">
+      <div class="phone__menu js-menu-container" id="phone__menu">
         <div class="container">
           <div class="phone__menu-top">
-            <button type="button" class="phone__menu-close-btn">
+            <button
+              type="button"
+              class="phone__menu-close-btn js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
               <svg class="phone__menu-close-icon" width="18.67" height="18.67">
                 <use href="./images/icons.svg#icon-menu_close"></use>
               </svg>
@@ -88,9 +98,6 @@
             <ul class="phone__contact-list list">
               <li class="phone__contact-list-item">
                 <a href="tel:+380961111111" class="phone__contact-list-contacts phone__tel link">
-                  <svg class="phone__contact-list-item-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
                   +38 096 111 11 11</a
                 >
               </li>
@@ -99,9 +106,6 @@
                   href="mailto:info@devstudio.com"
                   class="phone__contact-list-contacts phone__envelope link"
                 >
-                  <svg class="phone__contact-list-item-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
                   info@devstudio.com</a
                 >
               </li>
@@ -150,7 +154,7 @@
               <div class="work__list-item-focus">
                 <a href="" class="work__list-focus-link link">
                   <div class="work__list-item-wrap">
-                    <picture>
+                    <picture class="work_list_img">
                       <source
                         srcset="
                           ./images/portfolio/desktop/techno_desktop.jpg    1x,
