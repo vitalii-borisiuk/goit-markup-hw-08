@@ -1193,7 +1193,6 @@ ul {
   transform: translate(-50%, -50%) scale(1);
   width: 96%;
   height: auto;
-  padding: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1208,6 +1207,10 @@ ul {
     width: 528px;
     height: 581px;
   }
+}
+
+.modal__form-window {
+  padding: 40px;
 }
 
 .modal__close {
@@ -1332,13 +1335,19 @@ ul {
 }
 
 .modal__form-check-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
   display: flex;
   position: relative;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form-check-text {
+    font-size: 14px;
+  }
 }
 
 .modal__form-check-text span {
