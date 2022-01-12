@@ -24,8 +24,6 @@
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -470,8 +468,7 @@ ul {
 
 .footer__main {
   background-color: var(--background-first);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
 }
 
 .footer {
@@ -482,11 +479,6 @@ ul {
   .footer {
     display: flex;
   }
-}
-
-.footer.container {
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -629,6 +621,12 @@ ul {
   width: 100%;
   color: var(--first-color);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .mailing__text {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -1,17 +1,16 @@
 .footer__main {
   background-color: var(--background-first);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
 }
 .footer {
   align-items: baseline;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
-  &.container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+  // &.container {
+  //   padding-right: 15px;
+  //   padding-left: 15px;
+  // }
 }
 .footer__first {
   @media screen and (max-width: 767px) {
@@ -139,6 +138,9 @@
   width: 100%;
   color: var(--first-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   @media screen and (min-width: 768px) {
     width: 450px;
   }
