@@ -60,6 +60,7 @@
 }
 .phone__list-social {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 48px;
 }
 .phone__social-item {

@@ -72,7 +72,7 @@
 }
 .checkbox-form-field {
   margin-bottom: 30px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -121,6 +121,7 @@
   margin-bottom: 4px;
 }
 .modal__form-text-area {
+  display: flex;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -143,15 +144,24 @@
 
 .modal__form-check-text {
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--third-color);
   display: flex;
   position: relative;
   align-items: center;
+  @media screen and (max-width: 350px) {
+    display: block;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 351px) and (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
+    line-height: 1.71;
   }
   span {
     width: 16px;
@@ -159,7 +169,7 @@
     border-radius: 2px;
     margin-right: 7px;
     border: 1px solid #000000;
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
